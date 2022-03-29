@@ -1,3 +1,10 @@
-body {
-  background-color: bisque;
+label {
+  display:block;
+}
+#other {
+  display:block;
+}
+body{
+  background:bisque;
+
 }

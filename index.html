@@ -5,8 +5,49 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">description test</p>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Please help us improve our service by completing this short survey</p>
+    <form id="survey-form">
+     
+      <label id="name-label">First Name:</label><input id="name"  type="text" placeholder="Enter your first name" required />
+      <label id="last name-label">Last Name:</label><input id="last name" type="text" placeholder="Enter your last name"  required />
+      <label id="email-label">E-mail:</label><input id="email" type="email" placeholder="Enter your e-mail"  required />
+      <label id="number-label">Age(Optional):</label><input id="number" type="number" min="0" max="120"  placeholder="Age"  required />
+
+      <label>How did you first learn our hotel?</label> 
+      <select id="dropdown">
+        <option>Select one</option>
+        <option>Advertisement</option>
+        <option>Search Engine</option>
+        <option>Word of Mouth</option>
+        <option>Other</option>
+        <input id="other" type="text" required/>
+      </select>
+       
+        <label>
+         Was this your first visit to our hotel?
+        </label>
+        <label>
+          Yes
+        </label> <input type="radio" name="recommend" value="yes"/>
+        <label>
+          No
+        </label> <input type="radio" name="recommend" value="no"/>
+        <label>
+What influenced your decision to stay at our hotel? 
+        </label>
+       
+          <input type="checkbox" value="location"/> <label>Location</label>
+          <input type="checkbox" value="price"/> <label>Price</label>
+          <label>Any message for us?</label>\
+          <textarea rows="10" cols="60"></textarea>
+
+          </textarea>
+       
+    <input type="submit" value="Submit" id="submit"/>
+   
+     </form>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
