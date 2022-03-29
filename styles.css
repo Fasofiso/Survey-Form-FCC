@@ -1,10 +1,23 @@
 label {
-  display:block;
+  display: block;
 }
 #other {
-  display:block;
+  display: block;
 }
-body{
-  background:bisque;
+body {
+  background: bisque;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#submit {
+  display: block;
+}
 
+.big-label {
+  font-size: 20px;
+}
+
+.display-horizontally {
+  display: flex;
+  flex-direction: row;
 }

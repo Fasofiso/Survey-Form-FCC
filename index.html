@@ -9,10 +9,10 @@
     <p id="description">Please help us improve our service by completing this short survey</p>
     <form id="survey-form">
      
-      <label id="name-label">First Name:</label><input id="name"  type="text" placeholder="Enter your first name" required />
-      <label id="last name-label">Last Name:</label><input id="last name" type="text" placeholder="Enter your last name"  required />
-      <label id="email-label">E-mail:</label><input id="email" type="email" placeholder="Enter your e-mail"  required />
-      <label id="number-label">Age(Optional):</label><input id="number" type="number" min="0" max="120"  placeholder="Age"  required />
+      <label class="big-label" id="name-label">First Name:</label><input id="name"  type="text" placeholder="Enter your first name" required />
+      <label class="big-label" id="last name-label">Last Name:</label><input id="last name" type="text" placeholder="Enter your last name"  required />
+      <label class="big-label" id="email-label">E-mail:</label><input id="email" type="email" placeholder="Enter your e-mail"  required />
+      <label class="big-label" id="number-label">Age(Optional):</label><input id="number" type="number" min="0" max="120"  placeholder="Age"  required />
 
       <label>How did you first learn our hotel?</label> 
       <select id="dropdown">
@@ -27,19 +27,30 @@
         <label>
          Was this your first visit to our hotel?
         </label>
+        <div class="display-horizontally">
         <label>
           Yes
         </label> <input type="radio" name="recommend" value="yes"/>
         <label>
           No
         </label> <input type="radio" name="recommend" value="no"/>
+        </div>
         <label>
 What influenced your decision to stay at our hotel? 
         </label>
-       
+        <div class="display-horizontally">
           <input type="checkbox" value="location"/> <label>Location</label>
+          </div>
+          <div class="display-horizontally">
           <input type="checkbox" value="price"/> <label>Price</label>
-          <label>Any message for us?</label>\
+        </div>
+        <div class="display-horizontally">
+          <input type="checkbox" value="business"/> <label>Business reasons</label>
+        </div>
+          <div class="display-horizontally">
+          <input type="checkbox" value="reputation"/> <label>Reputation</label>
+          </div>
+          <label>Any message for us?</label>
           <textarea rows="10" cols="60"></textarea>
 
           </textarea>
